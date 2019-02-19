@@ -1,6 +1,8 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
+Currently a custom boilerplate designed by Nate Bennett
+
 # TEAM
 
     <name> -- <role> -- <twitter>
