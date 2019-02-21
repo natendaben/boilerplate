@@ -420,6 +420,9 @@ textarea {
   padding: 0.2em 0;
 }
 
+/* ==========================================================================
+  Custom Styles
+  ========================================================================== */
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -585,4 +588,63 @@ body {
   h3 {
     page-break-after: avoid;
   }
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto auto 100px;
+  grid-template-areas: "nav nav nav" "head head head" "main main side" "foot foot foot";
+  color: black;
+}
+body nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6647ff;
+  grid-area: nav;
+}
+body nav a {
+  text-decoration: none;
+}
+body nav a:visited {
+  color: black;
+}
+body nav a:hover {
+  color: white;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #80ff80;
+  grid-area: head;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8e80;
+  grid-area: main;
+}
+body main p {
+  margin: 5%;
+}
+body aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b580ff;
+  grid-area: side;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff80e3;
+  grid-area: foot;
 }
